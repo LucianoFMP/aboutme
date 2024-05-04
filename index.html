@@ -1,78 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>All About Me</title>
-    <style>
-        
-        #header {
-            font-family: Georgia, serif;
-            background-color: #483D8B;
-            color: #fff;
-            text-align: center;
-            padding: 30px;
-        }
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-           #main-content {
-            padding: 20px;
-            text-align: center
-            
-        }
-  
-    </style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: #ccc;
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 50px;
+}
+
+article {
+  float: left;
+  padding: 70px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
 </head>
-
-    
-<body background="volei.jpg">
-    
 <body>
-    <div id="header">
-        <h1>Minha carreira no vôlei</h1>
-    </div>
 
-    <div style="background-color:white; color:darkblue; font-family:georgia; font-size:160%; padding:10px;">
 
-            <p>Bem-vindos à história (resumida) do pseudo-jogador de vôlei Luciano Smanioto, também conhecido no universo da bola como "Morty" ou "Assassino".</p>
-    </div>
+<header>
+  <h2>Minha Carreira no Vôlei</h2>
+</header>
 
-    <br>
-
-     </div>
-
-    <div style="background-color:powderblue; color:darkblue; font-family:georgia; padding:10px;">
-
-    <h2 style=font-size:160%;"> * O início</h2>
-            <br>
-            <p>Tudo começou em 1987, por acaso, em campeonatos escolares.</p>
-    </div>
-        
-        <br>
-
-     </div>
-
-    <div style="background-color:green; color:yellow; font-family:georgia; padding:30px;">
-        
-                        <h2 style=font-size:150%;"> * O meio</h2>
-            <br>
-            <p>Competindo, filiado à Federação Gaúcha de Vôlei, em 1991 fui aprovado na peneira de um clube chamado Sogipa, então campeão brasileiro juvenil. Como o incentivo financeiro era pequeno e minha altura (1m88) era muito baixa para os padrões da época - muito mais baixa ainda pros padrões atuais - acabei não ficando no clube. Jogaria campeonatos federados por outros times até 1999.</p>
-</div>
-    <br>
-
-    <div style="background-color:red; color:yellow; font-family:georgia; padding:20px;">
+<section>
+  <nav>
+    <ul>
+      <li><body background="volei.jpg"></li>
+    </ul>
+  </nav>
+  
+  <article>
+  	<strong> Bem-vindos à história (resumida) do pseudo-jogador de vôlei Luciano Smanioto, também conhecido no universo da bola como "Morty" ou "Assassino". </strong> 
+   
+   <h1 style="background-color:white; color:darkblue; font-family:georgia; font-size:160%; padding:10px;">* O Início</h1>
+    <p>Tudo começou em 1987, por acaso, em campeonatos escolares.</p>
+ 
+ <h1 style="background-color:white; color:darkblue; font-family:georgia; font-size:160%; padding:10px;">* O Meio</h1>
+    <p>Competindo, filiado à Federação Gaúcha de Vôlei, em 1991 fui aprovado na peneira de um clube chamado Sogipa, então campeão brasileiro juvenil. Como o incentivo financeiro era pequeno e minha altura (1m88) era muito baixa para os padrões da época - muito mais baixa ainda pros padrões atuais - acabei não ficando no clube. Jogaria campeonatos federados por outros times até 1999.</p>
     
-                <h2 style=font-size:140%;"> * A aposentadoria</h2>
-            <br>
-            <p>Joguei esporadicamente aqui e ali até 2018, quando voltei a jogar regularmente. Porém, com 7 lesões em 5 anos, aposentei a joelheira em novembro de 2022, quando tive uma luxação exposta em um bloqueio</p>
-    </div>
-        <br>
+    <h1 style="background-color:white; color:darkblue; font-family:georgia; font-size:160%; padding:10px;">* A Aposentadoria</h1>
+    <p>Joguei esporadicamente aqui e ali até 2018, quando voltei a jogar regularmente. Porém, com 7 lesões em 5 anos, aposentei a joelheira em novembro de 2022, quando tive uma luxação exposta em um bloqueio.</p>
+    
+    <h1 style="background-color:white; color:darkblue; font-family:georgia; font-size:160%; padding:10px;">* The Walking Dead</h1>
+    <p>Na FMP, encontrei uma galera praticando e acabei organizando um voleizinho, voltando às quadras, muito na manha, tipo zumbi.</p>
+ 
+     </article>
+</section>
 
-        <div style="background-color:yellow; color:green; font-family:georgia; padding:50px;">
-
-                <h2 style=font-size:130%;"> * The Walking Dead</h2>
-            <br>
-            <p>Na FMP, encontrei uma galera praticando e acabei organizando um voleizinho, voltando às quadras, muito na manha, tipo zumbi.</p>
-
- </div>
-            
 </body>
-    
-    </html>
+</html>
