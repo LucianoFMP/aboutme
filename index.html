@@ -13,12 +13,27 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Style the header */
 header {
   background-color: #666;
   padding: 30px;
   text-align: center;
   font-size: 35px;
   color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  background: #ccc;
+  padding: 50px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 50px;
 }
 
 article {
@@ -28,13 +43,7 @@ article {
   background-color: #f1f1f1;
 }
 
-  article {
-  float: right;
-  padding: 70px;
-  width: 30%;
-  background-color: #6495ED;
-}
-
+/* Clear floats after the columns */
 section::after {
   content: "";
   display: table;
@@ -53,7 +62,7 @@ section::after {
 <section>
   <nav>
     <ul>
-      <li><background="volei.jpg"></li>
+      <li><body background="volei.jpg"></li>
     </ul>
   </nav>
   
@@ -77,3 +86,4 @@ section::after {
 
 </body>
 </html>
+
